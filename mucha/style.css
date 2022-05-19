@@ -1,0 +1,393 @@
+/*
+    Theme Name: ThemeMucha
+    Theme URI: https://thememuchawp.fr
+    Author: Ségolène Lazarus
+    Description: Mon super thème Alfons Mucha !
+    Requires at least: WordPress 5.0
+    Version: 1.0
+    Tested up to: 5.4
+    Requires PHP: 7.0
+*/
+
+@import url('http://fonts.cdnfonts.com/css/boecklins-universe');
+@import url('http://fonts.cdnfonts.com/css/bocklin');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+body{
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Amarante', cursive;
+}
+
+header{
+
+height: 100vh;
+/*
+    background-image: url(img/mucha-header.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+background-color: aqua;
+*/
+width: 100%;
+/*color:white;*/
+display: flex; 
+/*justify-content: space-between;*/
+flex-direction: column;
+/*align-items: center;*/
+padding-top: 5%;
+
+}
+
+header h1{
+
+    /* width: 15%; */
+    margin-right: 60%;
+    margin-top: 12%;
+    text-align: center;
+    font-size: 7em;
+    font-family: 'Amarante', cursive;
+
+}
+
+
+.menu_nav{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    background-color: rgba(255,255,255,0.6);
+    justify-content: center;
+}
+
+.menu_nav a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav
+{
+
+display: flex;
+width: 30vw;
+justify-content: flex-end;
+align-content: flex-end;
+
+}
+
+.logo{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+header ul{
+    
+
+    list-style: none;
+    display: flex;
+    
+/*    width: 30%;*/
+    justify-content: space-between;
+
+}
+
+.menu{
+    width:20vw;
+    font-size: 1.5em;
+}
+
+.sub-menu{
+    font-size: 0.7em;
+}
+
+.logoMucha
+{
+    width:250px;
+    display: block;
+}
+
+main{
+
+display: flex;
+/*height: 160vh;*/
+    justify-content: space-between;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+.principal
+{
+
+    width: 50%;
+    background-color: rgba(255, 243, 211, 0.849);
+    padding: 5%;
+    border-radius: 15px;
+   /* background-image: url(img/background.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    height: 100vh;*/
+border: 5px outset #FAC278;
+border-radius: 0px 40px 0px 40px;
+
+}
+
+.sidebar
+{
+
+width: 30%;
+    background-image: url(img/sidebar.jpg);
+background-color: teal;
+/*    background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+    height: 100vh;
+    border-radius: 15px;
+    padding: 2%;
+    border: 5px groove #FAC278;
+border-radius: 0px 40px 0px 40px;
+
+}
+.quotescollection-quote{
+    margin: 0;
+    margin-top:2% !important;
+}
+
+.attribution::before{
+    background-image: url(img/background.jpg);
+    height: 20px;
+}
+
+.attribution{
+    display: block;
+    /* height: 0; */
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3vh;
+  background-image: url(img/background-long.jpg);
+}
+
+footer{
+
+height: 45vh;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url('img/mucha-header.png');
+
+  /* Full height */
+/*  height: 100%; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#recent-posts-2 ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+#recent-posts-2 ul{
+    margin-right: 0;
+    padding-right: 0;
+}
+#recent-posts-2 ul li a{
+    text-decoration: none;
+    color: #3e1b52;
+    padding: 1%;
+    margin: 1%;
+
+}
+#recent-posts-2 ul li a:hover{
+    /* text-decoration: none; */
+    color: #dacd1e;
+    background-color: #3e1b52;
+
+}
+
+/* #quotescollection-5{
+    background-color: #fac2788a;
+    padding: 2%;
+} */
+
+#categories-2{
+    padding-bottom: 10%;
+}
+
+.lisible{
+    background-color: #fac2788a;
+    margin: 5%;
+}
+
+.postform {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}    
+.postform  {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 80%;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border: 1px groove #ffa700;
+        border-radius: 14px;
+        background: #ffece1;
+        color: #000000;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .postform select::-ms-expand {
+            display: none;
+        }
+        .postform:hover,
+        .postform:focus {
+            color: #000000;
+            background: #fef2c1;
+        }
+        .select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.postform_arrow {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+
+input {
+    padding: 4px;
+    font-size: 14px;
+    border-width: 2px;
+    border-color: #ffc58e;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    width: 80%;
+}
+input:focus {
+    outline:none;
+}
+
+textarea {
+    /* background-image: url(images/bg.png); */
+    background-color: #ffffff;
+	border: 1px groove #ffa700;
+	width: 80%;
+	height: 250px;
+}
+
+.contenu-meta a{
+    text-decoration: none;
+    color: #3e1b52;
+}
+
+.contenu-meta a:hover{
+    /* text-decoration: none; */
+    color: #dacd1e;
+    background-color: #3e1b52;
+
+}
+
+iframe{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu_nav_resp{
+    display: none;
+}
+
+@media ( max-width: 900px ) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .principal{
+        width: 80%;
+        margin-bottom: 15%;
+    }
+
+    .sidebar{
+        width: 80%;
+        margin-top: 5%;
+        height: 100%;
+    }
+
+    header h1{
+        width: 60%;
+    }
+    .menu_nav{
+        display: none;
+    }
+
+    .menu_nav_resp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 10vh;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+
+    .menu{
+        font-size: 1.7em;
+        text-align: center;
+        
+
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: black;
+    }
+
+    header ul{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+    }
+
+    header{
+        padding-bottom: 15%;
+    }
+
+
+}
